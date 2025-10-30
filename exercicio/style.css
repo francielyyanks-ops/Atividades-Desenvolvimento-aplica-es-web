@@ -1,0 +1,76 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #20058c 0%, #a9dbdd 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+ 
+  padding: 25px 30px;
+  width: 350px;
+  text-align: center;
+ 
+}
+
+
+h1 {
+  color: #f1e9c5;
+  margin-bottom: 5px;
+}
+
+.intro {
+  color: #333;
+  font-size: 0.9em;
+  margin-bottom: 15px;
+}
+
+.saldo-box {
+  background-color: #daf5f5;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #942525;
+}
+
+#saldo {
+  font-size: 1.8em;
+  color: #222;
+  margin: 0;
+  font-weight: bold;
+}
+
+.operacoes input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #f6a4a4;
+  border-radius: 6px;
+  font-size: 1em;
+}
+
+.botoes button {
+  margin: 5px;
+  padding: 10px 15px;
+  border: none;
+  background-color: #f0bd64e3;
+  color: rgb(4, 4, 4);
+  border-radius: 6px;
+  font-size: large;
+ 
+}
+
+.botoes button:hover {
+  background-color: #005fcc;
+}
+
+#mensagem {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #dc3232;
+  min-height: 24px;
+  transition: 0.3s;
+}
