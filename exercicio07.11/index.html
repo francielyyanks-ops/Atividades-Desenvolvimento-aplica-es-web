@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="entrada" placeholder="digite qualquer coisa"> 
+    <button id="botao" onclick="salvarinput()"> enviar</button>
+    
+    <li id ="lista"></li>
+    <script>
+
+        let inputUsuario = document.getElementById("entrada")
+        let chaveInput = 'chaveInputUsurio'
+        let value= localStorage. getItem (chaveInput)
+        
+        inputUsuario.value = value
+
+        function salvarinput() {
+            let input = inputUsuario.value;
+            localStorage.setItem(chaveInput, input);
+
+            alert(`voce digitou: ${input} \ncom a chave: ${chaveInput}`)
+
+            let item = document.createElement("li");
+            item.textContent = inputUsuario.value
+            lista.appendChild(item)
+            input.value = ""
+            localStorage.getItem("legal", lista)
+
+        }
+    
+    
+    </script>
+</body>
+</html>
